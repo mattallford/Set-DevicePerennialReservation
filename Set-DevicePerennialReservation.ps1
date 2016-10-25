@@ -53,7 +53,7 @@ function Set-DevicePerennialReservation
             {
                 #Import the ESXCLI commands for the ESXi host
                 Write-Verbose "Importing ESXcli commands for $($ESXiHost)"
-                $esxcli = Get-EsxCli -VMHost $ESXiHost
+                $esxcli = Get-EsxCli -VMHost $ESXiHost -V2
             }
             catch
             {
